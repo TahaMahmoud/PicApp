@@ -39,7 +39,7 @@ Using [Pexels API](https://www.pexels.com/api/documentation/)
     * Main
     *  Details
 
-Author:
+## Author:
 Created by Taha Mahmoud on 2021. [LinkedIn](https://www.linkedin.com/in/engtahamahmoud/)
 
 Please don't hesitate to ask any clarifying questions about the project if you have any.
