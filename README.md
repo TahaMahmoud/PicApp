@@ -5,10 +5,10 @@ PicApp is a simple iOS application, it retrieve pictures from free API and displ
 Using [Pexels API](https://www.pexels.com/api/documentation/)
 
 ## Used In The APP
-•    SWIFT
-•    Alamfoire-based Network Layer
-•    MVVM Architecture Pattern with Closures
-•    Adobe XD: UI/UX Design for the Application
+- SWIFT
+- Alamfoire-based Network Layer
+- MVVM Architecture Pattern with Closures
+- Adobe XD: UI/UX Design for the Application
 
 ## Demo GIF
 <img src="">
