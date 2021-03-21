@@ -22,20 +22,18 @@ Using [Pexels API](https://www.pexels.com/api/documentation/)
 <img src="">
 
 ## App Structure:
-•    App
-    •    Core
-    •    Extensions
-    •    Resources
-    •    SupportingFiles
-        •    External
-        •    Helper
+* App
+    * Core
+    * Extensions
+    * Resources
+    * SupportingFiles
+        * External
+        * Helper
 
+* DataManager
+        * Network
 
-•    DataManager
-        •    Network
-
-
-•    Router
+* Router
 
 * Modules
     * Main
