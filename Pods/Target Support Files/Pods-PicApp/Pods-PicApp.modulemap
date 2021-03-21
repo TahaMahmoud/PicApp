@@ -1,0 +1,6 @@
+framework module Pods_PicApp {
+  umbrella header "Pods-PicApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
