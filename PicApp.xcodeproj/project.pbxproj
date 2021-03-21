@@ -3,29 +3,101 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		040416FF2607799C00760451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040416FE2607799C00760451 /* AppDelegate.swift */; };
 		040417012607799C00760451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040417002607799C00760451 /* SceneDelegate.swift */; };
-		040417032607799C00760451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040417022607799C00760451 /* ViewController.swift */; };
 		040417062607799C00760451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040417042607799C00760451 /* Main.storyboard */; };
 		040417092607799C00760451 /* PicApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 040417072607799C00760451 /* PicApp.xcdatamodeld */; };
 		0404170B2607799D00760451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0404170A2607799D00760451 /* Assets.xcassets */; };
 		0404170E2607799D00760451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0404170C2607799D00760451 /* LaunchScreen.storyboard */; };
+		0404172926077E9C00760451 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404172626077E9C00760451 /* ViewControllers.swift */; };
+		0404172A26077E9C00760451 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404172726077E9C00760451 /* Storyboards.swift */; };
+		0404172B26077E9C00760451 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404172826077E9C00760451 /* MainRouter.swift */; };
+		0404173826077EB300760451 /* Router+Paramters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404172E26077EB200760451 /* Router+Paramters.swift */; };
+		0404173926077EB300760451 /* Router+AuthRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404172F26077EB200760451 /* Router+AuthRequired.swift */; };
+		0404173A26077EB300760451 /* Router+ParametersEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404173026077EB200760451 /* Router+ParametersEncoding.swift */; };
+		0404173B26077EB300760451 /* Router+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404173126077EB200760451 /* Router+Methods.swift */; };
+		0404173C26077EB300760451 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404173226077EB200760451 /* Router.swift */; };
+		0404173D26077EB300760451 /* Router+Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404173326077EB200760451 /* Router+Paths.swift */; };
+		0404173E26077EB300760451 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404173426077EB200760451 /* Constants.swift */; };
+		0404173F26077EB300760451 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404173626077EB300760451 /* NetworkClient.swift */; };
+		0404175126077F0F00760451 /* UIColor+GradientColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174326077F0E00760451 /* UIColor+GradientColors.swift */; };
+		0404175226077F0F00760451 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174426077F0E00760451 /* ShadowView.swift */; };
+		0404175326077F0F00760451 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174526077F0E00760451 /* UITextField+Padding.swift */; };
+		0404175426077F0F00760451 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174626077F0E00760451 /* CustomButton.swift */; };
+		0404175526077F0F00760451 /* UITextView+CenterVertically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174726077F0E00760451 /* UITextView+CenterVertically.swift */; };
+		0404175626077F0F00760451 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174826077F0E00760451 /* GradientBackground.swift */; };
+		0404175726077F0F00760451 /* ScreenBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174926077F0F00760451 /* ScreenBody.swift */; };
+		0404175826077F0F00760451 /* UITextField+PlaceholderColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174A26077F0F00760451 /* UITextField+PlaceholderColor.swift */; };
+		0404175926077F0F00760451 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174B26077F0F00760451 /* RoundedImage.swift */; };
+		0404175A26077F0F00760451 /* UITableView+AutoResized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174C26077F0F00760451 /* UITableView+AutoResized.swift */; };
+		0404175B26077F0F00760451 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174D26077F0F00760451 /* AppFonts.swift */; };
+		0404175C26077F0F00760451 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174E26077F0F00760451 /* AppColors.swift */; };
+		0404175D26077F0F00760451 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404174F26077F0F00760451 /* CustomView.swift */; };
+		0404175E26077F0F00760451 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404175026077F0F00760451 /* EmptyStateView.swift */; };
+		0404176F26077F3500760451 /* UIView+SimpleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404176D26077F3500760451 /* UIView+SimpleAnimation.swift */; };
+		0404177426077F4000760451 /* Helper+Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404177126077F4000760451 /* Helper+Spinner.swift */; };
+		0404177526077F4000760451 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404177226077F4000760451 /* Helper.swift */; };
+		0404177626077F4000760451 /* Helper+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404177326077F4000760451 /* Helper+Notifications.swift */; };
+		C5068D77A4F3EE049D961465 /* Pods_PicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EEAE00E81A673F82AA11B4 /* Pods_PicApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		040416FB2607799C00760451 /* PicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040416FE2607799C00760451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		040417002607799C00760451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		040417022607799C00760451 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		040417052607799C00760451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		040417082607799C00760451 /* PicApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PicApp.xcdatamodel; sourceTree = "<group>"; };
 		0404170A2607799D00760451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0404170D2607799D00760451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0404170F2607799D00760451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0404172626077E9C00760451 /* ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
+		0404172726077E9C00760451 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		0404172826077E9C00760451 /* MainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		0404172E26077EB200760451 /* Router+Paramters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Paramters.swift"; sourceTree = "<group>"; };
+		0404172F26077EB200760451 /* Router+AuthRequired.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+AuthRequired.swift"; sourceTree = "<group>"; };
+		0404173026077EB200760451 /* Router+ParametersEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+ParametersEncoding.swift"; sourceTree = "<group>"; };
+		0404173126077EB200760451 /* Router+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Methods.swift"; sourceTree = "<group>"; };
+		0404173226077EB200760451 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		0404173326077EB200760451 /* Router+Paths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+Paths.swift"; sourceTree = "<group>"; };
+		0404173426077EB200760451 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0404173626077EB300760451 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		0404174326077F0E00760451 /* UIColor+GradientColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+GradientColors.swift"; sourceTree = "<group>"; };
+		0404174426077F0E00760451 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		0404174526077F0E00760451 /* UITextField+Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
+		0404174626077F0E00760451 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0404174726077F0E00760451 /* UITextView+CenterVertically.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+CenterVertically.swift"; sourceTree = "<group>"; };
+		0404174826077F0E00760451 /* GradientBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
+		0404174926077F0F00760451 /* ScreenBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenBody.swift; sourceTree = "<group>"; };
+		0404174A26077F0F00760451 /* UITextField+PlaceholderColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+PlaceholderColor.swift"; sourceTree = "<group>"; };
+		0404174B26077F0F00760451 /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		0404174C26077F0F00760451 /* UITableView+AutoResized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+AutoResized.swift"; sourceTree = "<group>"; };
+		0404174D26077F0F00760451 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		0404174E26077F0F00760451 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		0404174F26077F0F00760451 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		0404175026077F0F00760451 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		0404176026077F2000760451 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		0404176126077F2000760451 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0404176226077F2000760451 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0404176326077F2000760451 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		0404176426077F2100760451 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		0404176526077F2100760451 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		0404176626077F2100760451 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		0404176726077F2100760451 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		0404176826077F2100760451 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		0404176926077F2100760451 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		0404176A26077F2100760451 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		0404176B26077F2100760451 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		0404176D26077F3500760451 /* UIView+SimpleAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SimpleAnimation.swift"; sourceTree = "<group>"; };
+		0404177126077F4000760451 /* Helper+Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Helper+Spinner.swift"; sourceTree = "<group>"; };
+		0404177226077F4000760451 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		0404177326077F4000760451 /* Helper+Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Helper+Notifications.swift"; sourceTree = "<group>"; };
+		2095235763E8F24AF45AF2B3 /* Pods-PicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicApp.release.xcconfig"; path = "Target Support Files/Pods-PicApp/Pods-PicApp.release.xcconfig"; sourceTree = "<group>"; };
+		B2EEAE00E81A673F82AA11B4 /* Pods_PicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E182556568CEFAE201F58083 /* Pods-PicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicApp.debug.xcconfig"; path = "Target Support Files/Pods-PicApp/Pods-PicApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5068D77A4F3EE049D961465 /* Pods_PicApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +117,8 @@
 			children = (
 				040416FD2607799C00760451 /* PicApp */,
 				040416FC2607799C00760451 /* Products */,
+				2715199068BF2EB830185869 /* Pods */,
+				0DA84D4AB74B123118CBE544 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +133,193 @@
 		040416FD2607799C00760451 /* PicApp */ = {
 			isa = PBXGroup;
 			children = (
-				040416FE2607799C00760451 /* AppDelegate.swift */,
-				040417002607799C00760451 /* SceneDelegate.swift */,
-				040417022607799C00760451 /* ViewController.swift */,
-				040417042607799C00760451 /* Main.storyboard */,
-				0404170A2607799D00760451 /* Assets.xcassets */,
-				0404170C2607799D00760451 /* LaunchScreen.storyboard */,
-				0404170F2607799D00760451 /* Info.plist */,
+				0404172226077DF300760451 /* Router */,
+				0404171F26077DA800760451 /* DataManager */,
+				0404171826077CD800760451 /* Modules */,
+				0404171726077CD400760451 /* App */,
 				040417072607799C00760451 /* PicApp.xcdatamodeld */,
 			);
 			path = PicApp;
+			sourceTree = "<group>";
+		};
+		0404171726077CD400760451 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0404171C26077CFC00760451 /* SupportingFiles */,
+				0404171B26077CF500760451 /* Resources */,
+				0404171A26077CEC00760451 /* Extensions */,
+				0404171926077CE600760451 /* Core */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0404171826077CD800760451 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0404172426077E0A00760451 /* Details */,
+				0404172326077E0500760451 /* Main */,
+				0404170C2607799D00760451 /* LaunchScreen.storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0404171926077CE600760451 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				040416FE2607799C00760451 /* AppDelegate.swift */,
+				040417002607799C00760451 /* SceneDelegate.swift */,
+				0404170F2607799D00760451 /* Info.plist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0404171A26077CEC00760451 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0404174E26077F0F00760451 /* AppColors.swift */,
+				0404174D26077F0F00760451 /* AppFonts.swift */,
+				0404174626077F0E00760451 /* CustomButton.swift */,
+				0404174F26077F0F00760451 /* CustomView.swift */,
+				0404175026077F0F00760451 /* EmptyStateView.swift */,
+				0404174826077F0E00760451 /* GradientBackground.swift */,
+				0404174B26077F0F00760451 /* RoundedImage.swift */,
+				0404174926077F0F00760451 /* ScreenBody.swift */,
+				0404174426077F0E00760451 /* ShadowView.swift */,
+				0404174326077F0E00760451 /* UIColor+GradientColors.swift */,
+				0404174C26077F0F00760451 /* UITableView+AutoResized.swift */,
+				0404174526077F0E00760451 /* UITextField+Padding.swift */,
+				0404174A26077F0F00760451 /* UITextField+PlaceholderColor.swift */,
+				0404174726077F0E00760451 /* UITextView+CenterVertically.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0404171B26077CF500760451 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0404174226077ED300760451 /* Fonts */,
+				0404170A2607799D00760451 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0404171C26077CFC00760451 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0404171E26077D1500760451 /* Helper */,
+				0404171D26077D0700760451 /* External */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0404171D26077D0700760451 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				0404176D26077F3500760451 /* UIView+SimpleAnimation.swift */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		0404171E26077D1500760451 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0404177226077F4000760451 /* Helper.swift */,
+				0404177326077F4000760451 /* Helper+Notifications.swift */,
+				0404177126077F4000760451 /* Helper+Spinner.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0404171F26077DA800760451 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0404172026077DB400760451 /* Network */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		0404172026077DB400760451 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0404173426077EB200760451 /* Constants.swift */,
+				0404173626077EB300760451 /* NetworkClient.swift */,
+				0404172D26077EB200760451 /* Router */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0404172226077DF300760451 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0404172826077E9C00760451 /* MainRouter.swift */,
+				0404172726077E9C00760451 /* Storyboards.swift */,
+				0404172626077E9C00760451 /* ViewControllers.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0404172326077E0500760451 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				040417042607799C00760451 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0404172426077E0A00760451 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		0404172D26077EB200760451 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0404172E26077EB200760451 /* Router+Paramters.swift */,
+				0404172F26077EB200760451 /* Router+AuthRequired.swift */,
+				0404173026077EB200760451 /* Router+ParametersEncoding.swift */,
+				0404173126077EB200760451 /* Router+Methods.swift */,
+				0404173226077EB200760451 /* Router.swift */,
+				0404173326077EB200760451 /* Router+Paths.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0404174226077ED300760451 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0404176726077F2100760451 /* Roboto-Black.ttf */,
+				0404176826077F2100760451 /* Roboto-BlackItalic.ttf */,
+				0404176026077F2000760451 /* Roboto-Bold.ttf */,
+				0404176126077F2000760451 /* Roboto-BoldItalic.ttf */,
+				0404176326077F2000760451 /* Roboto-Italic.ttf */,
+				0404176B26077F2100760451 /* Roboto-Light.ttf */,
+				0404176626077F2100760451 /* Roboto-LightItalic.ttf */,
+				0404176926077F2100760451 /* Roboto-Medium.ttf */,
+				0404176226077F2000760451 /* Roboto-MediumItalic.ttf */,
+				0404176426077F2100760451 /* Roboto-Regular.ttf */,
+				0404176A26077F2100760451 /* Roboto-Thin.ttf */,
+				0404176526077F2100760451 /* Roboto-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0DA84D4AB74B123118CBE544 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2EEAE00E81A673F82AA11B4 /* Pods_PicApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2715199068BF2EB830185869 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E182556568CEFAE201F58083 /* Pods-PicApp.debug.xcconfig */,
+				2095235763E8F24AF45AF2B3 /* Pods-PicApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +329,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 040417122607799D00760451 /* Build configuration list for PBXNativeTarget "PicApp" */;
 			buildPhases = (
+				192E536C44F5BF5CAC484635 /* [CP] Check Pods Manifest.lock */,
 				040416F72607799C00760451 /* Sources */,
 				040416F82607799C00760451 /* Frameworks */,
 				040416F92607799C00760451 /* Resources */,
+				A218C82D3439D6CD91F39E42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,15 +389,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		192E536C44F5BF5CAC484635 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PicApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A218C82D3439D6CD91F39E42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicApp/Pods-PicApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PicApp/Pods-PicApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PicApp/Pods-PicApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		040416F72607799C00760451 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0404173C26077EB300760451 /* Router.swift in Sources */,
+				0404175426077F0F00760451 /* CustomButton.swift in Sources */,
+				0404177626077F4000760451 /* Helper+Notifications.swift in Sources */,
+				0404173D26077EB300760451 /* Router+Paths.swift in Sources */,
+				0404173826077EB300760451 /* Router+Paramters.swift in Sources */,
 				040417092607799C00760451 /* PicApp.xcdatamodeld in Sources */,
-				040417032607799C00760451 /* ViewController.swift in Sources */,
+				0404176F26077F3500760451 /* UIView+SimpleAnimation.swift in Sources */,
+				0404175626077F0F00760451 /* GradientBackground.swift in Sources */,
+				0404172A26077E9C00760451 /* Storyboards.swift in Sources */,
+				0404173926077EB300760451 /* Router+AuthRequired.swift in Sources */,
+				0404173A26077EB300760451 /* Router+ParametersEncoding.swift in Sources */,
+				0404177526077F4000760451 /* Helper.swift in Sources */,
+				0404175C26077F0F00760451 /* AppColors.swift in Sources */,
+				0404175926077F0F00760451 /* RoundedImage.swift in Sources */,
+				0404175826077F0F00760451 /* UITextField+PlaceholderColor.swift in Sources */,
+				0404173E26077EB300760451 /* Constants.swift in Sources */,
 				040416FF2607799C00760451 /* AppDelegate.swift in Sources */,
+				0404172926077E9C00760451 /* ViewControllers.swift in Sources */,
+				0404173B26077EB300760451 /* Router+Methods.swift in Sources */,
+				0404175726077F0F00760451 /* ScreenBody.swift in Sources */,
+				0404175D26077F0F00760451 /* CustomView.swift in Sources */,
+				0404173F26077EB300760451 /* NetworkClient.swift in Sources */,
+				0404175326077F0F00760451 /* UITextField+Padding.swift in Sources */,
+				0404175526077F0F00760451 /* UITextView+CenterVertically.swift in Sources */,
+				0404175E26077F0F00760451 /* EmptyStateView.swift in Sources */,
+				0404177426077F4000760451 /* Helper+Spinner.swift in Sources */,
+				0404175A26077F0F00760451 /* UITableView+AutoResized.swift in Sources */,
 				040417012607799C00760451 /* SceneDelegate.swift in Sources */,
+				0404175B26077F0F00760451 /* AppFonts.swift in Sources */,
+				0404172B26077E9C00760451 /* MainRouter.swift in Sources */,
+				0404175226077F0F00760451 /* ShadowView.swift in Sources */,
+				0404175126077F0F00760451 /* UIColor+GradientColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,7 +599,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,12 +611,14 @@
 		};
 		040417132607799D00760451 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E182556568CEFAE201F58083 /* Pods-PicApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3ZWN56S89;
-				INFOPLIST_FILE = PicApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PicApp/App/Core/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +632,14 @@
 		};
 		040417142607799D00760451 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2095235763E8F24AF45AF2B3 /* Pods-PicApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R3ZWN56S89;
-				INFOPLIST_FILE = PicApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PicApp/App/Core/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
