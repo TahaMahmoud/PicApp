@@ -37,9 +37,9 @@ Using [Pexels API](https://www.pexels.com/api/documentation/)
 
 •    Router
 
-•    Modules
-        •    Main
-        •    Details
+* Modules
+    * Main
+    *  Details
 
 Author:
 Created by Taha Mahmoud on 2021. [LinkedIn](https://www.linkedin.com/in/engtahamahmoud/)
