@@ -18,7 +18,13 @@ Using [Pexels API](https://www.pexels.com/api/documentation/)
 - Main Screen
 <img src="">
 
+- Options Popup
+<img src="">
+
 - Details Screen
+<img src="">
+
+- Options Popup
 <img src="">
 
 ## App Structure:
